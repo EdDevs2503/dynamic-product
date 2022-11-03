@@ -54,7 +54,7 @@ describe('DynamicText test', () => {
     const styles = window.getComputedStyle(text)
 
     expect(text).toBeInTheDocument()
-    expect(styles.fontSize).toBe(texts.textSize.h1 + 'px')
+    expect(styles.fontSize).toBe(String(texts.textSize.h1) + 'px')
   })
 
   test('Testing subtitle', () => {
@@ -74,7 +74,7 @@ describe('DynamicText test', () => {
     const styles = window.getComputedStyle(text)
 
     expect(text).toBeInTheDocument()
-    expect(styles.fontSize).toBe(texts.textSize.h2 + 'px')
+    expect(styles.fontSize).toBe(String(texts.textSize.h2) + 'px')
   })
 
   test('Testing normal text', () => {
@@ -94,7 +94,7 @@ describe('DynamicText test', () => {
     const styles = window.getComputedStyle(text)
 
     expect(text).toBeInTheDocument()
-    expect(styles.fontSize).toBe(texts.textSize.normal + 'px')
+    expect(styles.fontSize).toBe(String(texts.textSize.normal) + 'px')
   })
 
   test('Testing small text', () => {
@@ -114,7 +114,7 @@ describe('DynamicText test', () => {
     const styles = window.getComputedStyle(text)
 
     expect(text).toBeInTheDocument()
-    expect(styles.fontSize).toBe(texts.textSize.small + 'px')
+    expect(styles.fontSize).toBe(String(texts.textSize.small) + 'px')
   })
 
   test('Testing tiny text', () => {
@@ -134,7 +134,7 @@ describe('DynamicText test', () => {
     const styles = window.getComputedStyle(text)
 
     expect(text).toBeInTheDocument()
-    expect(styles.fontSize).toBe(texts.textSize.tiny + 'px')
+    expect(styles.fontSize).toBe(String(texts.textSize.tiny) + 'px')
   })
 
   test('Testing normal weight', () => {

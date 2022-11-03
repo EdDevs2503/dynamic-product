@@ -11,16 +11,16 @@ export interface props {
 const DynamicText = ({ content, type, color, weight }: props): ReactElement => {
   if (type === 'h1') {
     return (
-            <h1 style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h1>
+      <h1 style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h1>
     )
   }
   if (type === 'h2') {
     return (
-            <h2 style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h2>
+      <h2 style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h2>
     )
   }
   return (
-        <p style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</p>
+    <p style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</p>
   )
 }
 
