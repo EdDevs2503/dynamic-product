@@ -1,2 +1,2 @@
-export * as colors from "./colors";
-export * as texts from "./texts";
+export * as colors from './colors'
+export * as texts from './texts'
