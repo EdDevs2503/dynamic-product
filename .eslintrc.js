@@ -13,6 +13,7 @@ module.exports = {
   ],
   overrides: [],
   parserOptions: {
+    project: ["path/to/your/tsconfig/file"],
     ecmaVersion: "latest",
     sourceType: "module",
   },
