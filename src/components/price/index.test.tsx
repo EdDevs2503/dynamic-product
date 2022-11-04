@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Price, { props } from './index'
+import { Price, props } from './index'
 
 describe('Price component', () => {
   test('Is offer price is rendering', () => {

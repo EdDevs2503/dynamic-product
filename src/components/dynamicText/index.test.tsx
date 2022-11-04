@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { texts, colors } from '../../common'
-import DynamicText, { props } from './index'
+import { DynamicText, props } from './index'
 
 describe('DynamicText test', () => {
   test('Given text is rendering', () => {

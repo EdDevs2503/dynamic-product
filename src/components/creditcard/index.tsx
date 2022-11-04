@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import DynamicText from '../dynamicText'
+import { DynamicText } from '../dynamicText'
 import { SvgMasterCard, SvgVisa } from '../icons'
 
 export interface props {
@@ -7,7 +7,7 @@ export interface props {
   lastDigits: number
 }
 
-const CreditCard = ({ from, lastDigits }: props): ReactElement => {
+export const CreditCard = ({ from, lastDigits }: props): ReactElement => {
   return (
     <div className='flex inline-block space-x-0.5 align-items-center'>
         {
@@ -27,5 +27,3 @@ const CreditCard = ({ from, lastDigits }: props): ReactElement => {
     </div>
   )
 }
-
-export default CreditCard

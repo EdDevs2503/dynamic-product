@@ -8,7 +8,7 @@ export interface props {
   content: string
 }
 
-const DynamicText = ({ content, type, color, weight }: props): ReactElement => {
+export const DynamicText = ({ content, type, color, weight }: props): ReactElement => {
   if (type === 'h1') {
     return (
       <h1 style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h1>
@@ -23,5 +23,3 @@ const DynamicText = ({ content, type, color, weight }: props): ReactElement => {
     <p style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</p>
   )
 }
-
-export default DynamicText

@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { colors } from '../../common'
-import Button, { props } from './index'
+import { Button, props } from './index'
 
 describe('Testing button component', () => {
   test('Given button content is rendering', () => {

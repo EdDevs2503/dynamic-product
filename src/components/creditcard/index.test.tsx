@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import CreditCard, { props } from './index'
+import { props, CreditCard } from './index'
 
 describe('Test CreditCard component', () => {
   test('Test if VISA icon is rendering', () => {

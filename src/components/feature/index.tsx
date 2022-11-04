@@ -1,6 +1,6 @@
 import { ReactElement, SVGProps } from 'react'
 import { colors } from '../../common'
-import DynamicText from '../dynamicText'
+import { DynamicText } from '../dynamicText'
 
 export interface props {
   title: string
@@ -8,7 +8,7 @@ export interface props {
   Icon: (params: SVGProps<SVGSVGElement>) => ReactElement
 }
 
-const Feature = ({ title, description, Icon }: props): ReactElement => {
+export const Feature = ({ title, description, Icon }: props): ReactElement => {
   return (
     <div className='flex flex-col items-center inline-block space-y-2'>
         <Icon fill={colors.blue} />
@@ -19,5 +19,3 @@ const Feature = ({ title, description, Icon }: props): ReactElement => {
     </div>
   )
 }
-
-export default Feature
