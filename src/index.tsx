@@ -12,6 +12,12 @@ root.render(
   <React.StrictMode>
     <div className='flex justify-center'>
       <Product
+        creditCardData={{
+          from: 'VISA',
+          lastDigits: 1234
+        }}
+        offerPrice={6.99}
+        fullPrice={9.99}
         onCancel={() => alert('canceled')}
         onContinue={() => alert('continue')}
         onTerms={() => alert('terms')}

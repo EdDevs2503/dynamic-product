@@ -9,6 +9,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: []
     }
@@ -25,6 +31,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: []
     }
@@ -41,6 +53,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: [
         {
@@ -67,6 +85,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: []
     }
@@ -83,6 +107,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: []
     }
@@ -99,6 +129,12 @@ describe('Tetsing Product container', () => {
       onCancel: jest.fn(),
       onTerms: jest.fn(),
       onContinue: jest.fn(),
+      creditCardData: {
+        from: 'VISA',
+        lastDigits: 1234
+      },
+      fullPrice: 9.99,
+      offerPrice: 6.99,
       description: 'Introducing our cool new product which is specifically designed for take home problem!',
       features: []
     }

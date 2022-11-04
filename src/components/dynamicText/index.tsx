@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import { texts } from '../../common'
 
-export interface props {
+export interface DynamicTextPropTypes {
   weight: 'normal' | 'bold' | 'extraBold'
   type: 'h1' | 'h2' | 'normal' | 'small' | 'tiny'
   color?: string
@@ -9,7 +9,7 @@ export interface props {
   className?: string // TODO test this new prop
 }
 
-export const DynamicText = ({ content, type, color, weight, className }: props): ReactElement => {
+export const DynamicText = ({ content, type, color, weight, className }: DynamicTextPropTypes): ReactElement => {
   if (type === 'h1') {
     return (
       <h1 className={className} style={{ color, fontSize: texts.textSize[type], fontWeight: texts.textWeight[weight] }}>{content}</h1>

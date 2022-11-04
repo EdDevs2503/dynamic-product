@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { Price, props } from './index'
+import { Price, PricePropTypes } from './index'
 
 describe('Price component', () => {
   test('Is offer price is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: PricePropTypes = {
       offerPrice: 6.99,
       fullPrice: 9.99
     }
@@ -13,7 +13,7 @@ describe('Price component', () => {
   })
 
   test('Is full price is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: PricePropTypes = {
       offerPrice: 6.99,
       fullPrice: 9.99
     }

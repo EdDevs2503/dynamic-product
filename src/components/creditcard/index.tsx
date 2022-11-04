@@ -3,12 +3,12 @@ import { colors } from '../../common'
 import { DynamicText } from '../dynamicText'
 import { SvgMasterCard, SvgVisa } from '../icons'
 
-export interface props {
+export interface CreditCardPropTypes {
   from: 'VISA' | 'MasterCard'
   lastDigits: number
 }
 
-export const CreditCard = ({ from, lastDigits }: props): ReactElement => {
+export const CreditCard = ({ from, lastDigits }: CreditCardPropTypes): ReactElement => {
   return (
     <div className='flex space-x-0.5 align-items-center'>
         {

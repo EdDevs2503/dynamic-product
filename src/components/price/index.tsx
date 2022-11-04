@@ -2,12 +2,12 @@ import { ReactElement } from 'react'
 import { colors, texts } from '../../common'
 import { DynamicText } from '../dynamicText'
 
-export interface props {
+export interface PricePropTypes {
   offerPrice: number
   fullPrice: number
 }
 
-export const Price = ({ offerPrice, fullPrice }: props): ReactElement => {
+export const Price = ({ offerPrice, fullPrice }: PricePropTypes): ReactElement => {
   return (
     <div className='flex flex-col items-center space-y-1'>
         <div className='px-6 py-2 rounded inline-block' style={{ backgroundColor: colors.aqua }}>
