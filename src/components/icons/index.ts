@@ -1,0 +1,6 @@
+export { SvgCalendar } from './calendar'
+export { SvgVisa } from './visa'
+export { SvgMasterCard } from './masterCard'
+export { SvgTriangule } from './triangule'
+export { SvgSetting } from './setting'
+export { SvgChart } from './chart'
