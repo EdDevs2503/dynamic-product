@@ -1,6 +1,6 @@
 import { ReactElement, SyntheticEvent } from 'react'
 import { colors } from '../../common'
-import DynamicText from '../dynamicText'
+import { DynamicText } from '../dynamicText'
 
 export interface props {
   content: string
@@ -8,7 +8,7 @@ export interface props {
   onClick: (event: SyntheticEvent) => void
 }
 
-const Button = ({ content, isBG, onClick }: props): ReactElement => {
+export const Button = ({ content, isBG, onClick }: props): ReactElement => {
   return (
     <button
         onClick={onClick}
@@ -19,5 +19,3 @@ const Button = ({ content, isBG, onClick }: props): ReactElement => {
     </button>
   )
 }
-
-export default Button

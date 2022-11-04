@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { SvgCalendar } from '../icons'
-import Feature, { props } from './index'
+import { Feature, props } from './index'
 
 describe('Testing feature component', () => {
   test('The given title is rendering', () => {
