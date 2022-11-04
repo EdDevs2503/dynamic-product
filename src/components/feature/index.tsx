@@ -10,7 +10,7 @@ export interface props {
 
 const Feature = ({ title, description, Icon }: props): ReactElement => {
   return (
-    <div className='flex flex-col items-center space-y-2'>
+    <div className='flex flex-col items-center inline-block space-y-2'>
         <Icon fill={colors.blue} />
         <div className='flex flex-col items-center'>
             <DynamicText type='h2' content={title} weight="bold" />
