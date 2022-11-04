@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import { texts, colors } from '../../common'
-import { DynamicText, props } from './index'
+import { DynamicText, DynamicTextPropTypes } from './index'
 
 describe('DynamicText test', () => {
   test('Given text is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a test',
       color: colors.white,
       weight: 'normal',
@@ -20,7 +20,7 @@ describe('DynamicText test', () => {
   })
 
   test('Given text is rendering with the correct color', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a test',
       color: 'red',
       weight: 'normal',
@@ -38,7 +38,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing title', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a title test',
       color: 'red',
       weight: 'normal',
@@ -58,7 +58,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing subtitle', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a title test',
       color: 'red',
       weight: 'normal',
@@ -78,7 +78,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing normal text', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'normal',
@@ -98,7 +98,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing small text', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'normal',
@@ -118,7 +118,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing tiny text', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'normal',
@@ -138,7 +138,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing normal weight', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'normal',
@@ -158,7 +158,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing bold weight', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'bold',
@@ -178,7 +178,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing extraBold weight', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'extraBold',
@@ -198,7 +198,7 @@ describe('DynamicText test', () => {
   })
 
   test('Testing className prop', () => {
-    const fakeProps: props = {
+    const fakeProps: DynamicTextPropTypes = {
       content: 'This is a normal text',
       color: 'red',
       weight: 'extraBold',

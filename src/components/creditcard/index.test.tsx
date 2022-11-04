@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { props, CreditCard } from './index'
+import { CreditCardPropTypes, CreditCard } from './index'
 
 describe('Test CreditCard component', () => {
   test('Test if VISA icon is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: CreditCardPropTypes = {
       from: 'VISA',
       lastDigits: 1234
     }
@@ -15,7 +15,7 @@ describe('Test CreditCard component', () => {
   })
 
   test('Test if MasterCard icon is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: CreditCardPropTypes = {
       from: 'MasterCard',
       lastDigits: 1234
     }
@@ -27,7 +27,7 @@ describe('Test CreditCard component', () => {
   })
 
   test('Test if the component is displaying the correct format', () => {
-    const fakeProps: props = {
+    const fakeProps: CreditCardPropTypes = {
       from: 'MasterCard',
       lastDigits: 1234
     }

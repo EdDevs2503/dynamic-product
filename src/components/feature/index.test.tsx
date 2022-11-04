@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import { SvgCalendar } from '../icons'
-import { Feature, props } from './index'
+import { Feature, FeaturePropTypes } from './index'
 
 describe('Testing feature component', () => {
   test('The given title is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: FeaturePropTypes = {
       title: 'test title',
       description: 'test description',
       Icon: SvgCalendar
@@ -17,7 +17,7 @@ describe('Testing feature component', () => {
   })
 
   test('The given description is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: FeaturePropTypes = {
       title: 'test title',
       description: 'test description',
       Icon: SvgCalendar
@@ -30,7 +30,7 @@ describe('Testing feature component', () => {
   })
 
   test('The given description is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: FeaturePropTypes = {
       title: 'test title',
       description: 'test description',
       Icon: SvgCalendar
@@ -43,7 +43,7 @@ describe('Testing feature component', () => {
   })
 
   test('The given svg is rendering', () => {
-    const fakeProps: props = {
+    const fakeProps: FeaturePropTypes = {
       title: 'test title',
       description: 'test description',
       Icon: SvgCalendar
