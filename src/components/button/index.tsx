@@ -12,7 +12,7 @@ export const Button = ({ content, isBG, onClick }: props): ReactElement => {
   return (
     <button
         onClick={onClick}
-        className='w-44 h-10 rounded border'
+        className='max-[768px]:w-5/10 min-[760px]:w-44 h-10 rounded border'
         style={{ borderColor: colors.blue, backgroundColor: isBG ? colors.blue : 'transparent' }}
     >
         <DynamicText type="normal" color={isBG ? colors.white : colors.blue} weight="extraBold" content={content} />

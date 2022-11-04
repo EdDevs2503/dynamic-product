@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+import { colors } from '../../common'
 import { DynamicText } from '../dynamicText'
 import { SvgMasterCard, SvgVisa } from '../icons'
 
@@ -9,7 +10,7 @@ export interface props {
 
 export const CreditCard = ({ from, lastDigits }: props): ReactElement => {
   return (
-    <div className='flex inline-block space-x-0.5 align-items-center'>
+    <div className='flex space-x-0.5 align-items-center'>
         {
             from === 'VISA' && (
                 <SvgVisa />
@@ -23,7 +24,7 @@ export const CreditCard = ({ from, lastDigits }: props): ReactElement => {
                 />
             )
         }
-        <DynamicText weight='normal' type='normal' content={`•••• •••• •••• ${lastDigits}`} />
+        <DynamicText weight='normal' type='normal' color={colors.blue} content={`•••• •••• •••• ${lastDigits}`} />
     </div>
   )
 }
