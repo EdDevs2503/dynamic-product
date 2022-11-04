@@ -196,4 +196,22 @@ describe('DynamicText test', () => {
     expect(text).toBeInTheDocument()
     expect(styles.fontWeight).toBe(String(texts.textWeight.extraBold))
   })
+
+  test('Testing className prop', () => {
+    const fakeProps: props = {
+      content: 'This is a normal text',
+      color: 'red',
+      weight: 'extraBold',
+      type: 'normal'
+    }
+    const clasName: string = 'testing-class'
+    const { container } = render(
+      <DynamicText
+          {...fakeProps}
+          className={clasName}
+      />
+    )
+
+    expect(container.getElementsByClassName(clasName)[0]).toBeInTheDocument()
+  })
 })
